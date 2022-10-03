@@ -8,6 +8,8 @@ import CardResident from './components/CardResident'
 import FilterList from './components/FilterList'
 import ErrorScreen from './components/ErrorScreen'
 import './cardResident.css'
+import cabezera from './assets/img/image.png'
+import title from './assets/img/title.png'
 
 function App() {
 
@@ -63,10 +65,15 @@ function App() {
   console.log(suggestedList)
   return (
     <div className="App">
-      <h1>rick and morty</h1>
-      <form onSubmit={handlesubmit} action="">
-        <input id='idlocation' placeholder='buscar location' type="text" onChange={handlechangue} />
-        <button>search</button>
+      <div className='header__container'>
+      
+      <img className='header__img' src={cabezera} alt="" />
+      <img className='title__img' src={title} alt="" />
+
+      </div>
+        <form className='form__location' onSubmit={handlesubmit} action="">
+        <input  className='form__input' id='idlocation' placeholder='buscar location' type="text" onChange={handlechangue} />
+        <button className='form__btn'>search</button>
         <FilterList setsearchInput={setsearchInput} suggestedList={suggestedList} />
       </form>
 

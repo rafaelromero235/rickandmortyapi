@@ -1,3 +1,30 @@
+.App{
+   
+}
+
+.title__img{
+position: absolute;    
+width: 50%;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+margin: auto;
+}
+.header__container{
+position: relative;
+    height: 350px;
+}
+
+.form__location{
+width: 100%;
+text-align: center;
+}
+.form__input{
+width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
 .card__container{
 display: flex;
 justify-content: center;
@@ -5,12 +32,18 @@ gap: 30px;
 flex-wrap: wrap;
 
 }
+
+.header__img{
+    width: 100%;
+    position: absolute;
+}
 body{
     background-color: #06292e;
     color: white;
 }
 
 .card__location{
+    z-index: 10;
     background-color: #062226;
     border-radius: 10px;
     max-width: 800px;
