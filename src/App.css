@@ -1,0 +1,41 @@
+.card__container{
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+
+}
+body{
+    background-color: #06292e;
+    color: white;
+}
+
+.card__location{
+    background-color: #062226;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.location__title{
+    text-align: center;
+   
+    padding: 20px;
+}
+.location__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    
+    padding: 20px;
+}
+.location__items{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 20px;
+
+}
